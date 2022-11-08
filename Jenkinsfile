@@ -14,7 +14,7 @@ pipeline{
         }
         stage("testing ..."){
             steps{
-                echo "========executing A========"
+                sh 'pytest TestRest.py'
             }
         }
     }
