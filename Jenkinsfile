@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("cloning ..."){
             steps{
-                sh 'echo hothaifa'
+                sh 'git clone https://github.com/devopsPRO27/requests '
 
             }
         }
@@ -13,11 +13,6 @@ pipeline{
             }
         }
         stage("testing ..."){
-            steps{
-                echo "========executing A========"
-            }
-        }
-        stage("deploying ..."){
             steps{
                 echo "========executing A========"
             }
