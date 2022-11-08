@@ -9,7 +9,7 @@ pipeline{
         }
         stage("building ..."){
             steps{
-                echo "========executing A========"
+                sh 'pyhton http_e.py'
             }
         }
         stage("testing ..."){
