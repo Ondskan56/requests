@@ -9,7 +9,7 @@ pipeline{
         }
         stage("building ..."){
             steps{
-                sh 'python http_e.py'
+                sh 'python3 http_e.py'
             }
         }
         stage("testing ..."){
