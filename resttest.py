@@ -1,6 +1,4 @@
 
-lol = "yes"
-# content of test_sample.py
-def test_answer(lol):
-    if lol == "yes":
+def test_answer():
+    if (1==1):
         print("YESSSS")
