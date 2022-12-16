@@ -8,12 +8,12 @@ pipeline{
         }
         stage("building ..."){
             steps{
-                sh 'python http_e.py'
+                bat 'python http_e.py'
             }
         }
         stage("testing ..."){
             steps{
-                sh 'pytest resttest.py'
+                bat 'pytest resttest.py'
             }
         }
     }
