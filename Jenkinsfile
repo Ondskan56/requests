@@ -1,5 +1,9 @@
 pipeline{
     agent any 
+      environment {
+    PATH = "C:\Users\Alon Faifer\AppData\Local\Programs\Python\Python310"
+
+    }
     stages{
         stage("cloning ..."){
             steps{
@@ -8,6 +12,7 @@ pipeline{
         }
         stage("building ..."){
             steps{
+                bat 'pip install -r requirements.txt'
                 bat 'python http_e.py'
             }
         }
