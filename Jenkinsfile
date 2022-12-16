@@ -1,9 +1,5 @@
 pipeline{
     agent any 
-      environment {
-    PATH = "C:\Users\Alon Faifer\AppData\Local\Programs\Python\Python310"
-
-    }
     stages{
         stage("cloning ..."){
             steps{
