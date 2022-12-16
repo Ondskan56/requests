@@ -17,10 +17,10 @@ pipeline{
                 bat 'python -m pytest resttest.py'
             }
         }
-        post{
-            success{
-                bat 'docker build -t abc -f dockerfile .'
-            }
+    }
+    post{
+        success{
+            bat 'docker build -t abc -f dockerfile .'
         }
     }
 }
