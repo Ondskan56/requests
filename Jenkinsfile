@@ -14,6 +14,7 @@ pipeline{
         stage("testing ..."){
             steps{
                 bat 'pytest resttest.py'
+                
             }
         }
     }
